@@ -115,6 +115,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\bookparser.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\emitter.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\error.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\init.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\lexer.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\main.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\parser.c" />
+    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\symbol.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\files.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
