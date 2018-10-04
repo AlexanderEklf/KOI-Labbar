@@ -5,6 +5,23 @@ int i = 0;
 
 //Riktig jävla spagetthi-band AID lösning.
 //Kolla upp postfix
+<<<<<<< HEAD
+=======
+void push()
+{
+	stack[j] = arr[index];
+	j++;
+	index++;
+}
+
+int pop(int i)
+{
+	//hejhejhej
+
+	return i;
+}
+
+>>>>>>> 0068ce058f4ce747e959c196c371bb8a6d548b5a
 int postfixalgorithm(int arr[])
 {
 	int stack[10];
