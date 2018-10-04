@@ -30,14 +30,14 @@ struct entry {  /*  form of symbol table entry  */
 
 extern int arr[10];
 
-struct Stack
-{
-	int top;
-	unsigned capacity;
-	int* arr;
-};
+//struct Stack
+//{
+//	int top;
+//	unsigned capacity;
+//	int* arry;
+//};
 
-extern struct Stack* createStack(unsigned capacity);
+//extern struct Stack* createStack(unsigned capacity);
 
 //
 //const int isEmpty(struct Stack* stack)
@@ -57,7 +57,7 @@ extern struct Stack* createStack(unsigned capacity);
 //	return '$';
 //}
 //
-extern void push(struct Stack* stack, char op);
+//extern void push(struct Stack* stack, char op);
 
 ////Funktion för att kolla om karaktären är en operand
 //const int isOperand(char c)
@@ -85,7 +85,7 @@ extern void push(struct Stack* stack, char op);
 
 
 extern struct entry symtable[];  /* symbol table  */
-extern struct Stack* stack;
+//extern struct Stack* stack;
 
 extern void init();  /*  loads keywords into symtable  */
 extern void error(char* m);  /*  generates all error messages  */

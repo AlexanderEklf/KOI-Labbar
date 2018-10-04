@@ -15,28 +15,25 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\bookparser.c">
+    <ClCompile Include="emitter.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\emitter.c">
+    <ClCompile Include="error.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\error.c">
+    <ClCompile Include="init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\init.c">
+    <ClCompile Include="lexer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\lexer.c">
+    <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\main.c">
+    <ClCompile Include="parser.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\parser.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\symbol.c">
+    <ClCompile Include="symbol.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
