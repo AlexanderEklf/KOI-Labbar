@@ -18,7 +18,7 @@ void push()
 
 int pop(int i)
 {
-
+	//hejhej
 
 	return i;
 }
