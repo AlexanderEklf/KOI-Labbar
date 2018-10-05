@@ -15,7 +15,7 @@ void push()
 	index++;
 }
 
-//Anvï¿½nds ej
+//Används ej
 char pop(char i)
 {
 	stack[j - 2] + stack[j - 1];
@@ -29,6 +29,7 @@ int postfixalgorithm(int arr[])
 {
 	index = 0;
 	j = 0;
+	i = 0;
 
 	while (index < 10) {
 		switch (arr[index]) {
