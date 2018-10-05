@@ -15,12 +15,16 @@ void push()
 	index++;
 }
 
-int pop(int i)
+//Anv�nds ej
+char pop(char i)
 {
-	//hejhejhej
+	stack[j - 2] + stack[j - 1];
+	j--;
+	index++;
 
 	return i;
 }
+
 int postfixalgorithm(int arr[])
 {
 	index = 0;
@@ -45,7 +49,13 @@ int postfixalgorithm(int arr[])
 			j--;
 			break;
 
-		case 1: case 2: case 3: case 4: case 5: case 6: case'7': case '8': case '9':
+		case '/':
+			stack[j - 2] = stack[j - 2] / stack[j - 1];
+			index++;
+			j--;
+			break;
+
+		case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8: case 9:
 
 			stack[j] = arr[index];
 			j++;
@@ -56,10 +66,7 @@ int postfixalgorithm(int arr[])
 			index = 10;
 			//index = 0;
 			j = 0;
-
 		}
-
-
 	}
 	return stack[0];
 }
