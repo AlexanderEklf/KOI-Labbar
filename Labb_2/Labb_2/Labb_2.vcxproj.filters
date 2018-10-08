@@ -41,7 +41,7 @@
     <None Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\files.html" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\..\OneDrive\Universitet\KOI\hand_coded_parser\labb2\global.h">
+    <ClInclude Include="global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

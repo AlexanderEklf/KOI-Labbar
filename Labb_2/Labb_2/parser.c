@@ -3,7 +3,7 @@
 #include "global.h"
 
 int lookahead;
-
+int flag = 0;
 
 
 void match(int);
@@ -18,18 +18,19 @@ void parse()  /*  parses and translates expression list  */
 	start();
 }
 
-
+//för att upptäcka tilldelning
 void assignment()
 {
 	int id_lexeme = tokenval;
 	match(ID);
 	emit(ID, id_lexeme);
 	match('=');
-	term();
-	moreterms();
+	flag = 1;
+	expr();
 	emit('=', tokenval);
 
 }
+
 void start()
 {
 	/* Just one production for start, so we don't need to check lookahead */
@@ -40,6 +41,7 @@ void start()
 	match(DONE);
 }
 
+//assignment tillagd så att grammtiken ska kunna hantera tilldelningar
 void list()
 {
 	if (lookahead == '(' || lookahead == ID || lookahead == NUM) {
@@ -85,17 +87,33 @@ void term()
 	morefactors();
 }
 
+//kod för att upptäcka ^
+void exponential()
+{
+	if (lookahead == '^') {
+		match('^');
+		factor();
+		emit('^', tokenval);
+		morefactors();
+	}
+}
+
 void morefactors()
 {
+	exponential();
 	if (lookahead == '*') {
 		match('*');
 		factor();
+		//Om vi upptäcker * så måste vi kolla en bit framåt för att se om det är ett ^ efter som har högre prioritet
+		exponential();
 		emit('*', tokenval);
 		morefactors();
+
 	}
 	else if (lookahead == '/') {
 		match('/');
 		factor();
+		exponential();
 		emit('/', tokenval);
 		morefactors();
 	}
