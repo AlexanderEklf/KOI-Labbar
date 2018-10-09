@@ -2,8 +2,12 @@
 
 %{
 #include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+extern int yyparse();
 extern int yyerror(char const *msg);
-extern int yylex();
+extern int yylex(void);
 %}
 
 %token PLUS MINUS STAR LPAREN RPAREN NUMBER NEWLINE
