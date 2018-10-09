@@ -31,6 +31,16 @@ int yyerror(char const *msg) {
     return 0;
 }
 
+int yylex(void)	{
+	int c;
+	c = getchar();
+	if(isdigit(c)) {
+		yylval = c - '0';
+		return NUMBER;
+		}
+	return c;
+}
+
 int main() {
     printf("%d\n", yyparse());
     return 0;

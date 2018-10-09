@@ -18,9 +18,12 @@
     <ClCompile Include="y.tab.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="lex.yy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="y.tab.h">
+    <ClInclude Include="example.tab.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

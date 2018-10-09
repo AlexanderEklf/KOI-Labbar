@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lex.yy.c" />
+    <ClCompile Include="y.tab.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="example.tab.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{06DD9885-2E91-4B3D-9DED-D267CD5E4782}</ProjectGuid>
@@ -114,12 +121,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="y.tab.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="y.tab.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
